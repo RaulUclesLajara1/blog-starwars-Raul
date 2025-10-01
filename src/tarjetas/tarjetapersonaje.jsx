@@ -1,13 +1,14 @@
-const TarjetaPersonaje = ({name,gender,mass}) => {
+import { Link } from "react-router-dom"
+
+const TarjetaPersonaje = ({name,uid}) => {
     
     return (
         <>
-        <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="..."/>
-            <div class="card-body">
-                <h5 class="card-title">{name}</h5>
-                <p class="card-text">Nombre : {nombre} <br/> Genero : {gender} <br/> Peso:{mass} </p>
-                <Link to={`/vistaespecifica/personaje/${name}`}><button class="btn btn-primary">Saber más</button></Link>
+        <div className="card me-2" style={{"width": "18rem"}}>
+            <img src="..." className="card-img-top" alt="..."/>
+            <div className="card-body">
+                <h5 className="card-title">{name}</h5>
+                <Link to={`/vistaespecifica/personaje/${uid}`}><button className="btn btn-primary">Saber más</button></Link>
         </div>
         </div>
         </>
