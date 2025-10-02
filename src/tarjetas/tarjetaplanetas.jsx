@@ -1,13 +1,16 @@
-const TarjetaPlaneta = ({name,climate,population}) => {
+import { Link } from "react-router-dom"
+
+const TarjetaPlaneta = ({name,uid}) => {
     
     return (
         <>
-        <div class="card" style="width: 18rem;">
+        <div class="card" style={{"width": "18rem;"}}>
             <img src="..." class="card-img-top" alt="..."/>
             <div class="card-body">
                 <h5 class="card-title">{name}</h5>
-                <p class="card-text">Nombre : {name} <br/> Clima : {climate} <br/> Poblacion:{population} </p>
-                <Link to={`/vistaespecifica/planeta/${name}`}><button class="btn btn-primary">Saber más</button></Link>
+                <p class="card-text">Nombre : {name}</p>
+                <Link to={`/vistaespecifica/planets/${uid}`}><button class="btn btn-primary">Saber más</button></Link>
+
         </div>
         </div>
         </>

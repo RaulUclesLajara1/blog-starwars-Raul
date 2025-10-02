@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 
-const TarjetaPelicula = ({name,director,created}) => {
+const TarjetaPelicula = ({name,director,created,uid}) => {
     
     return (
         <>
@@ -9,7 +9,7 @@ const TarjetaPelicula = ({name,director,created}) => {
             <div class="card-body">
                 <h5 class="card-title">{name}</h5>
                 <p class="card-text">Titulo : {name} <br/> Director: {director} <br/> Fecha:{created} </p>
-                <Link to={`/vistaespecifica/pelicula/${name}`}><button class="btn btn-primary">Saber más</button></Link>
+                <Link to={`/vistaespecifica/films/${uid}`}><button class="btn btn-primary">Saber más</button></Link>
         </div>
         </div>
         </>

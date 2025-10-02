@@ -10,7 +10,7 @@ function App() {
       <BrowserRouter>
         <Routes>
             <Route element={<VistaGeneral/>} path="/"/>
-            <Route element={<VistaEspecifica/>} path="/vistaespecifica/:tipo/:name"/>
+            <Route element={<VistaEspecifica/>} path="/vistaespecifica/:tipo/:uid"/>
         </Routes>
       </BrowserRouter>
     </>

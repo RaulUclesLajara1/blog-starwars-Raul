@@ -8,7 +8,7 @@ const TarjetaPersonaje = ({name,uid}) => {
             <img src="..." className="card-img-top" alt="..."/>
             <div className="card-body">
                 <h5 className="card-title">{name}</h5>
-                <Link to={`/vistaespecifica/personaje/${uid}`}><button className="btn btn-primary">Saber más</button></Link>
+                <Link to={`/vistaespecifica/people/${uid}`}><button className="btn btn-primary">Saber más</button></Link>
         </div>
         </div>
         </>
