@@ -27,6 +27,6 @@ export default function ReducerFavoritos(state,action){
         case "Anyadir_favorito":
             return {...state, favoritos:[...state.favoritos,action.payload]}     
         case "Eliminar_favorito":
-            return {...state, favoritos: state.favoritos.filter((x)=>{x!=action.payload})}   
+            return {...state, favoritos: state.favoritos.filter((x)=>(x!=action.payload))}   
     }
 }

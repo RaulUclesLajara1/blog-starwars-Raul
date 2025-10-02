@@ -1,0 +1,13 @@
+body{
+    background: black;
+}
+
+.flex-row {
+  scrollbar-width:revert ;      /* grosor */
+  scrollbar-color: red #111; /* thumb track */
+}
+
+.flex-row:hover {
+scrollbar-width:revert;
+  scrollbar-color: red #111; /* en hover, rojo */
+}
